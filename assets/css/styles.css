@@ -12,15 +12,15 @@
    ========================================================================== */
 :root {
   /* --- Bảng màu --- */
-  --color-primary: #ea8fd8;      /* xanh thương hiệu */
-  --color-primary-dark: #7f97d9;
-  --color-accent: #a378ef;       /* tím nhấn */
-  --color-text: #7fa4de;         /* chữ chính */
-  --color-text-soft: #64748b;    /* chữ phụ */
-  --color-bg: #15e133;           /* nền trang */
-  --color-surface: #e779c7;      /* nền vùng nhấn */
-  --color-border: #8be897;       /* viền */
-  --color-chip: #e9b69d;         /* nền chip kỹ năng */
+  --color-primary: #1d4ed8;      /* xanh đậm, tương phản tốt với nền sáng */
+  --color-primary-dark: #1e40af; /* xanh đậm hơn cho trạng thái hover */
+  --color-accent: #6d28d9;       /* tím nhấn */
+  --color-text: #0f172a;         /* chữ chính */
+  --color-text-soft: #475569;    /* chữ phụ */
+  --color-bg: #f8fafc;           /* nền trang */
+  --color-surface: #eff6ff;      /* nền vùng nhấn */
+  --color-border: #cbd5e1;       /* viền */
+  --color-chip: #dbeafe;          /* nền chip kỹ năng */
 
   /* --- Typography --- */
   --font-base: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -452,4 +452,59 @@ ul {
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+/* FORM LIEN HE */
+.contact-form {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #222;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    color: var(--color-text);
+    background: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.2);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: var(--color-primary-dark);
 }
