@@ -6,10 +6,17 @@
 |---|---|
 | **Tên dự án** | Website CV/Portfolio cá nhân — Đoàn Bá Trường |
 | **Phiên bản** | v1.0.0 |
+<<<<<<< HEAD
 | **Ngày kiểm thử/đánh giá** | 23/11/2026 |
 | **Người thực hiện/đánh giá** | Chưa cung cấp |
 | **Phạm vi** | Đối chiếu mã nguồn, nội dung và tài liệu bàn giao theo 6 nhóm tiêu chí bên dưới |
 | **Phương pháp** | Rà soát tĩnh repository; chụp ảnh bằng Google Chrome 157.0.8103.79 (headless) tại viewport 390×844, 768×1024 và 1440×1000; chưa kiểm thử trên thiết bị vật lý hoặc môi trường triển khai |
+=======
+| **Ngày kiểm thử/đánh giá** | 05/11/2026 |
+| **Người thực hiện/đánh giá** | Chưa cung cấp |
+| **Phạm vi** | Đối chiếu mã nguồn, nội dung và tài liệu bàn giao theo 6 nhóm tiêu chí bên dưới |
+| **Phương pháp** | Rà soát tĩnh repository và chụp ảnh giao diện tại các viewport responsive bằng trình duyệt; chưa kiểm thử trên thiết bị vật lý hoặc môi trường triển khai |
+>>>>>>> 4ed793a24999afdfbd642ceeb50c2ca434cb2c0d
 
 > **Lưu ý:** Trạng thái trong báo cáo phản ánh bằng chứng có thể xác nhận từ mã nguồn và tài liệu hiện có. Các nội dung chưa chạy thử được ghi rõ là cần kiểm chứng; không xem việc rà soát tĩnh là thay thế cho kiểm thử trên môi trường thực tế.
 
@@ -50,7 +57,11 @@
 | Bố cục có quy tắc responsive cho các kích thước màn hình | **Đạt** | [`assets/css/styles.css`](../assets/css/styles.css) dùng bố cục mobile-first, breakpoint từ 768px và 1280px; ảnh chụp xác nhận lưới dự án hiển thị 1/2/3 cột ở viewport mobile/tablet/desktop. |
 | Có trạng thái focus bàn phím và hỗ trợ giảm chuyển động | **Đạt** | CSS định nghĩa `:focus-visible` và `prefers-reduced-motion`. Chưa kiểm thử thao tác bàn phím hoặc thiết lập hệ điều hành trên trình duyệt. |
 | Màu chữ, nền và thành phần tương tác đủ dễ đọc | **Cần cải thiện** | Một số biến màu trong stylesheet có độ sáng gần nhau và màu nền `#15e133` rất rực; cần đo tương phản theo WCAG và kiểm tra trạng thái hover/focus trước nghiệm thu. |
+<<<<<<< HEAD
 | Hình ảnh và nội dung có hiển thị phù hợp trên mobile/tablet/desktop | **Cần cải thiện** | Đã tự chụp ảnh màn hình bằng trình duyệt tại viewport 390×844, 768×1024 và 1440×1000: [Mobile](screenshots/responsive-mobile.png), [Tablet](screenshots/responsive-tablet.png), [Desktop](screenshots/responsive-desktop.png). CSS Grid lần lượt hiển thị 1/2/3 cột ở các viewport này. Đây là ảnh chụp trình duyệt, chưa phải thiết bị vật lý; cần tiếp tục kiểm tra khả năng đọc, tương phản màu và hiển thị trên thiết bị/trình duyệt thực tế. |
+=======
+| Hình ảnh và nội dung có hiển thị phù hợp trên mobile/tablet/desktop | **Cần cải thiện** | Đã chụp ảnh tại các viewport 390×844, 768×1024 và 1440×1000: [Mobile](screenshots/responsive-mobile.png), [Tablet](screenshots/responsive-tablet.png), [Desktop](screenshots/responsive-desktop.png). Bằng chứng là ảnh chụp viewport trình duyệt, chưa phải thiết bị vật lý; cần tiếp tục kiểm tra khả năng đọc, tương phản màu và hiển thị trên thiết bị/trình duyệt thực tế. |
+>>>>>>> 4ed793a24999afdfbd642ceeb50c2ca434cb2c0d
 | Liên kết và nhãn liên hệ rõ ràng với người dùng | **Cần cải thiện** | Nhãn “facebook” và “sdt” chưa nhất quán về cách viết; liên kết đang là placeholder như nêu ở tiêu chí chức năng. |
 | Tương thích với các trình duyệt mục tiêu | **Cần cải thiện** | README nêu Chrome, Firefox, Edge và Safari, nhưng chưa có kết quả kiểm thử trên bất kỳ trình duyệt/phiên bản cụ thể nào. |
 
@@ -91,7 +102,11 @@
 | Có hướng dẫn chạy cục bộ | **Đạt** | README cung cấp hướng dẫn mở trực tiếp và chạy HTTP server bằng Python trên Windows/macOS/Linux. Chưa chạy xác nhận từng lệnh. |
 | Có hướng dẫn triển khai bằng Docker/Nginx | **Cần cải thiện** | README cung cấp lệnh Docker chạy Nginx; chưa thực thi trên Windows/macOS/Linux và chưa kiểm tra nội dung sau triển khai. |
 | Có bộ test chức năng/giao diện và kết quả thực thi | **Chưa đạt** | Chưa có test case, kết quả pass/fail hoặc báo cáo tự động trong phạm vi repository được rà soát. |
+<<<<<<< HEAD
 | Có minh chứng trực quan và thông tin môi trường kiểm thử | **Cần cải thiện** | Đã đính kèm ảnh responsive tự chụp bằng Google Chrome 157.0.8103.79 (headless) tại viewport 390×844, 768×1024 và 1440×1000: [Mobile](screenshots/responsive-mobile.png), [Tablet](screenshots/responsive-tablet.png), [Desktop](screenshots/responsive-desktop.png). Chưa kiểm thử trên thiết bị vật lý hoặc URL môi trường triển khai. |
+=======
+| Có minh chứng trực quan và thông tin môi trường kiểm thử | **Chưa đạt** | Chưa có ảnh chụp màn hình, danh sách trình duyệt/phiên bản, viewport hoặc URL môi trường kiểm thử đính kèm. |
+>>>>>>> 4ed793a24999afdfbd642ceeb50c2ca434cb2c0d
 | Có tiêu chí nghiệm thu và quyết định bàn giao được ghi nhận | **Cần cải thiện** | Báo cáo này cung cấp checklist ban đầu; người phụ trách cần cập nhật kết quả sau khi chạy kiểm thử thực tế và ghi nhận phê duyệt. |
 
 ## 4. Đánh giá tổng kết và đề xuất
@@ -107,7 +122,11 @@ Sản phẩm có phạm vi gọn, là website CV tĩnh được xây dựng bằ
 3. Kiểm tra và điều chỉnh độ tương phản màu; kiểm thử trực quan ở viewport mobile, tablet và desktop.
 4. Chạy thử website qua hướng dẫn cục bộ và Docker/Nginx; kiểm tra CSS, ảnh, liên kết, console và network errors.
 5. Cập nhật README để cây thư mục, tài liệu phát hành, phiên bản và nội dung repository nhất quán.
+<<<<<<< HEAD
 6. Ghi lại trình duyệt/phiên bản, thiết bị hoặc viewport và kết quả từng checklist; bổ sung ảnh minh chứng cho các kiểm thử khác và xác minh HTTPS/header tại hosting nếu triển khai production.
+=======
+6. Ghi lại trình duyệt/phiên bản, thiết bị hoặc viewport, kết quả từng checklist và ảnh minh chứng; xác minh HTTPS/header tại hosting nếu triển khai production.
+>>>>>>> 4ed793a24999afdfbd642ceeb50c2ca434cb2c0d
 
 ### Kết luận bàn giao
 
