@@ -126,8 +126,8 @@ Mở <http://localhost:8080> để xem trang. Nhấn `Ctrl+C` (Windows/Linux) ho
     ├── css/
     │   └── styles.css
     └── img/
-        ├── doremon.jpg
-        ├── hhh.jpg
-        ├── meo.jpg
-        └── meomeo.jpg
+        ├── ảnh 1.jpg
+        ├── ảnh 2.jpg
+        ├── ảnh 3.jpg
+        └── ảnh 4.jpg
 ```
